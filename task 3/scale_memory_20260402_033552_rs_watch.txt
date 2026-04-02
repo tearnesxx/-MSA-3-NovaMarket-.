@@ -1,0 +1,9 @@
+NAME                       DESIRED   CURRENT   READY   AGE
+booking-v1-v1-56df466cdd   0         0         0       7d21h
+booking-v1-v1-56f4bfb99f   0         0         0       7d21h
+booking-v2-v2-6d7f74dfdd   1         1         1       7d21h
+scaletestapp-554c8fd8b9    0         0         0       92m
+scaletestapp-5f69ddff86    0         0         0       42m
+scaletestapp-6b9df57d59    10        10        10      32m
+scaletestapp-85b7b8b675    0         0         0       89m
+scaletestapp-8646c7bd6b    0         0         0       95m

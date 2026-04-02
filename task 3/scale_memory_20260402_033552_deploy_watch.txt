@@ -1,0 +1,2 @@
+NAME           READY   UP-TO-DATE   AVAILABLE   AGE
+scaletestapp   10/10   10           10          95m
