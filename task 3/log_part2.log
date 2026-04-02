@@ -1,0 +1,31 @@
+﻿-- From file: scale_memory_20260402_033552_hpa_watch.txt --
+scaletestapp-mem-hpa   Deployment/scaletestapp   memory: 106%/80%   1         10        10         95m
+scaletestapp-mem-hpa   Deployment/scaletestapp   memory: 107%/80%   1         10        10         96m
+scaletestapp-mem-hpa   Deployment/scaletestapp   memory: 109%/80%   1         10        10         97m
+scaletestapp-mem-hpa   Deployment/scaletestapp   memory: 107%/80%   1         10        10         97m
+scaletestapp-mem-hpa   Deployment/scaletestapp   memory: 106%/80%   1         10        10         98m
+scaletestapp-mem-hpa   Deployment/scaletestapp   memory: 107%/80%   1         10        10         99m
+scaletestapp-mem-hpa   Deployment/scaletestapp   memory: 105%/80%   1         10        10         100m
+scaletestapp-mem-hpa   Deployment/scaletestapp   memory: 103%/80%   1         10        10         101m
+
+
+-- From file: scale_memory_20260402_033552_deploy_watch.txt --
+scaletestapp   10/10   10           10          95m
+
+-- From file: scale_memory_20260402_033552_events.txt --
+45m         Normal    ScalingReplicaSet              deployment/scaletestapp                        Scaled down replica set scaletestapp-85b7b8b675 from 10 to 1
+45m         Normal    ScalingReplicaSet              deployment/scaletestapp                        Scaled up replica set scaletestapp-5f69ddff86 from 0 to 1
+45m         Normal    ScalingReplicaSet              deployment/scaletestapp                        Scaled up replica set scaletestapp-5f69ddff86 from 1 to 3
+45m         Normal    SuccessfulRescale              horizontalpodautoscaler/scaletestapp-mem-hpa   New size: 4; reason: memory resource utilization (percentage o
+45m         Normal    ScalingReplicaSet              deployment/scaletestapp                        Scaled up replica set scaletestapp-85b7b8b675 from 1 to 2
+45m         Normal    SuccessfulRescale              horizontalpodautoscaler/scaletestapp-mem-hpa   New size: 8; reason:
+45m         Normal    ScalingReplicaSet              deployment/scaletestapp                        Scaled up replica set scaletestapp-85b7b8b675 from 2 to 4
+45m         Normal    ScalingReplicaSet              deployment/scaletestapp                        Scaled up replica set scaletestapp-5f69ddff86 from 3 to 6
+45m         Normal    ScalingReplicaSet              deployment/scaletestapp                        Scaled down replica set scaletestapp-85b7b8b675 from 4 to 3
+45m         Normal    ScalingReplicaSet              deployment/scaletestapp                        Scaled up replica set scaletestapp-5f69ddff86 from 6 to 7
+44m         Normal    ScalingReplicaSet              deployment/scaletestapp                        Scaled down replica set scaletestapp-85b7b8b675 from 3 to 2
+35m         Normal    SuccessfulRescale              horizontalpodautoscaler/scaletestapp-mem-hpa   New size: 4; reason:
+35m         Normal    ScalingReplicaSet              deployment/scaletestapp                        (combined from similar events): Scaled down replica set scalet
+34m         Normal    SuccessfulRescale              horizontalpodautoscaler/scaletestapp-mem-hpa   New size: 8; reason: memory resource utilization (percentage o
+34m         Normal    SuccessfulRescale              horizontalpodautoscaler/scaletestapp-mem-hpa   New size: 10; reason:
+
